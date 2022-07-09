@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url("../imagenes/fondogym.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+.formulario{
+    width: 32%;
+    max-width: 33%;
+    border-radius: 1rem;
+    box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid #d3d3d3;
+}
+input{
+    font-size:100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid gray;
+    margin: 18px;
+    border-radius: 1rem;
+    font-size: 19px;
+}
+.formulario .titulo{
+    background: rgb(29, 24, 24);
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+    letter-spacing: .3rem;
+    border: 2px solid #303131;
+    color: white;
+    font-size: 24px;
+}
+
+input[name="Ingresar"]{
+    border-radius: 3rem;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+    background: rgb(29, 24, 24);
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    border: 2px solid #161b1b;
+    color: white;
+    font-size: 20px;
+}
+input[name="Ingresar"]:hover{
+   transform: scale(.96);
+}
+
+@media screen and (max-width:1200px){ 
+    .formulario{
+        width: 42%;
+        max-width: 43%;
+    }
+}
+
+@media screen and (max-width: 880px){ 
+    .formulario{
+        width: 62%;
+        max-width: 63%;
+    }
+}
+@media screen and (max-width: 580px){ 
+    .formulario{
+        width: 72%;
+        max-width: 73%;
+    }
+}
+@media screen and (max-width: 480px){ 
+    .formulario{
+        width: 88%;
+        max-width: 89%;
+    }
+}
