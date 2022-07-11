@@ -16,6 +16,7 @@ $row=mysqli_fetch_array($resultado_usuario);
     <script src="https://kit.fontawesome.com/32f4af17ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="./css/usuarios.css">
+    <link rel="stylesheet" href="style.css">
     <title>Usuarios</title>
 </head>
 <body>
@@ -29,10 +30,10 @@ $row=mysqli_fetch_array($resultado_usuario);
     <div class="container_usuario">
         <div class="row_usuario">
             <h2>Ingrese Datos</h2>
-            <form action="insertar.php" method="post">
-                <input type="text" placeholder="idUsuario" name="idUsuario" required>
-                <input type="text" placeholder="Nombre" name="nombre" required>
-                <input type="text" placeholder="Apellido" name="apellido" required>
+            <form action="insertar.php" method="post" id="form">
+                <input type="number" placeholder="idUsuario" name="idUsuario" required>
+                <input type="text" placeholder="Nombre" name="nombre" required maxlength="20">
+                <input type="text" placeholder="Apellido" name="apellido" required maxlength="20">
                 <input type="submit">
             </form>
         </div>
@@ -69,7 +70,10 @@ $row=mysqli_fetch_array($resultado_usuario);
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-        <script>
+
+<script type="text/javascript">
+
+//////////////////////////////JQUERY DATATABLES//////////////////////////////
             $(document).ready(function () 
             {
                 $('#example').DataTable();

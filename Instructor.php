@@ -30,10 +30,10 @@
                             <h2>Ingrese datos</h2>
                                 <form action="insertar_Instructor.php" method="POST">
 
-                                    <input type="text" class="" name="id" placeholder="id" required>
+                                    <input type="number" class="" name="id" placeholder="id" required>
                                     <input type="text" class="" name="Nombre" placeholder="Nombre" required>
                                     <input type="text" class="" name="Curso" placeholder="Curso" required>
-                                    <input type="text" class="" name="Telefono" placeholder="Telefono" required>
+                                    <input type="number" class="" name="Telefono" placeholder="Telefono" required maxlength="9">
                                     
                                     <input type="submit" class="">
                                 </form>

@@ -69,17 +69,20 @@ tbody{
 thead{
         background-color: azure;
         background: rgb(83, 177, 214); 
+        margin: 20px;
 }
 .editar{
         background-color: rgb(153, 144, 20);
         color: white;
-        padding:10px;
+        margin: 10px;
+        padding:8px;
         border-radius: 15px;
 }
 .eliminar{
         background-color: rgb(133, 2, 2);
         color: white;
-        padding: 10px;
+        margin: 10px;
+        padding:8px;
         border-radius: 15px;
 }
 button{
@@ -123,6 +126,7 @@ button{
 }
 table ,th,td,tr{
         border: 1px solid black;
+        margin: 0;
 }
 .ganancias{
         font-family: 'Montserrat Alternates', sans-serif;

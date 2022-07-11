@@ -33,8 +33,8 @@ $row=mysqli_fetch_array($resultado_usuario);
         <div class="row_usuario">
             <h2>Insertar Pago</h2>
             <form action="insertar_pago.php" method="post">
-                <input type="text" placeholder="idUsuario" name="idUsuario" required>
-                <input type="text" placeholder="monto" name="monto" required>
+                <input type="number" placeholder="idUsuario" name="idUsuario" required>
+                <input type="number" placeholder="monto" name="monto" required>
                 <input type="date" placeholder="fechaInicio" name="fechaInicio" required>
                 <input type="date" placeholder="fechaFin" name="fechaFin" required>
                 <input type="submit">
